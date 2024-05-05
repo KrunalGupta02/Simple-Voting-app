@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting App</title>
+    <link rel="shortcut icon"
+        href="https://static.vecteezy.com/system/resources/thumbnails/024/153/651/original/election-ballot-paper-casting-into-voting-box-animation-alpha-channel-election-candidate-vote-ballot-cast-political-election-presidential-election-day-voting-booth-polling-station-voting-process-free-video.jpg"
+        type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- socket.io client cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"
+        integrity="sha512-Xm9qbB6Pu06k3PUwPj785dyTl6oHxgsv9nHp7ej7nCpAqGZT3OZpsELuCYX05DdonFpTlBpXMOxjavIAIUwr0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Vote for your favourite programming language</h2>
+
+        <div class="progress-box" id="html">
+            <p>HTML</p>
+            <div class="progress-bar">
+                <span data="0%" class="percent-tag"></span>
+            </div>
+        </div>
+        <div class="progress-box" id="css">
+            <p>CSS</p>
+            <div class="progress-bar">
+                <span data="0%" class="percent-tag"></span>
+            </div>
+        </div>
+        <div class="progress-box" id="javascript">
+            <p>Javascript</p>
+            <div class="progress-bar">
+                <span data="0%" class="percent-tag"></span>
+            </div>
+        </div>
+        <div class="progress-box" id="react">
+            <p>React JS</p>
+            <div class="progress-bar">
+                <span data="0%" class="percent-tag"></span>
+            </div>
+        </div>
+        <div class="progress-box" id="java">
+            <p>Java</p>
+            <div class="progress-bar">
+                <span data="0%" class="percent-tag"></span>
+            </div>
+        </div>
+
+        <h3>Total Votes : <span id="totalVotes"></span></h3>
+        <div class="name">
+            <h5>Built with ❤️ and JavaScript <a href="https://github.com/KrunalGupta02">Krunal</a></h5>
+        </div>
+    </div>
+
+</body>
+
+</html>
