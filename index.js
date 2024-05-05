@@ -1,17 +1,4 @@
-import { createServer } from "http";
-import { Server } from "socket.io";
-
-const httpServer = createServer();
-
-const io = new Server(httpServer, {
-  cors: {
-    origin: "*",
-  },
-});
-
-httpServer.listen(3500, () => {
-  console.log("Listening on port 3500");
-});
+const io = require("socket.io")(8000, { cors: { origin: "*" } });
 
 let totalVotes = 0;
 let votingPolls = {

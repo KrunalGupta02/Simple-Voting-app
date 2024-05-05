@@ -11,8 +11,10 @@
         type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <!-- socket deployed server link -->
-    <script defer src="https://simple-voting-app.onrender.com/socket.io/socket.io.js"></script>
-    <script defer src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.min.js"
+        integrity="sha512-Xm9qbB6Pu06k3PUwPj785dyTl6oHxgsv9nHp7ej7nCpAqGZT3OZpsELuCYX05DdonFpTlBpXMOxjavIAIUwr0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://voting-app-server-57ji.onrender.com/socket.io/socket.io.js"></script>
 </head>
 
 <body>
@@ -56,6 +58,7 @@
         </div>
     </div>
 
+    <script src="app.js"></script>
 </body>
 
 </html>

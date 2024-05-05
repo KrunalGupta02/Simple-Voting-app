@@ -1,6 +1,6 @@
 // Client side code
 // const socket = io("ws://localhost:3500");
-const socket = io("https://simple-voting-app.onrender.com");
+const socket = io("https://voting-app-server-57ji.onrender.com");
 
 const progressBoxes = document.querySelectorAll(".progress-box");
 const percentTags = document.querySelectorAll(".percent-tag");
