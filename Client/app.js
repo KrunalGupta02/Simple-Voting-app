@@ -1,6 +1,6 @@
 // Client side code
-// const socket = io("ws://localhost:3500");
-const socket = io("https://voting-app-server-57ji.onrender.com");
+const socket = io("ws://localhost:3500");
+// const socket = io("https://voting-app-server-57ji.onrender.com");
 
 const progressBoxes = document.querySelectorAll(".progress-box");
 const percentTags = document.querySelectorAll(".percent-tag");
@@ -43,7 +43,7 @@ const updatePolls = (data) => {
   console.log(votingData);
   let totalVotes = data.totalVotes;
 
-  totalVotesElem.innerHTML += totalVotes;
+  totalVotesElem.innerHTML = totalVotes;
 
   // Update the progress bars for each voting option
   percentTags.forEach((percentTag, index) => {
